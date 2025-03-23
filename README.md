@@ -35,7 +35,7 @@ Kyber employs the following security measures:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/kyber.git
+git clone https://github.com/reschjonas/QuantHide.git
 cd kyber
 ```
 

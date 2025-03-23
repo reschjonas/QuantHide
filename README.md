@@ -7,8 +7,6 @@
 
 A quantum-resistant steganography tool that hides messages in images using post-quantum cryptography. Protects your communications against future quantum computers.
 
-![Kyber Preview](https://i.imgur.com/example.png)
-
 ## ✨ Features
 
 - **Quantum-Safe Encryption** - Uses MLKEM-1024 (Kyber) algorithm selected by NIST for standardization

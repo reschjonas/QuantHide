@@ -1,6 +1,6 @@
-# Technical Overview of Kyber
+# Technical Overview of QuantCrypt
 
-This document provides a detailed technical explanation of the technologies, cryptographic methods, and implementation details used in the Kyber application.
+This document provides a detailed technical explanation of the technologies, cryptographic methods, and implementation details used in the QuantCrypt application.
 
 ## Table of Contents
 
@@ -51,9 +51,9 @@ The "1024" in MLKEM-1024 indicates the security level, with larger numbers provi
    shared_secret = kem.decaps(secret_key, cipher_text)
    ```
 
-### Implementation in Kyber
+### Implementation in QuantCrypt
 
-In the Kyber application, we utilize the QuantCrypt library's implementation of MLKEM-1024:
+In the QuantCrypt application, we utilize the QuantCrypt library's implementation of MLKEM-1024:
 
 ```python
 from quantcrypt.kem import MLKEM_1024
@@ -77,7 +77,7 @@ The application manages these operations through the `KeyManager` class, which p
 
 ### Least Significant Bit (LSB) Steganography
 
-Kyber employs LSB steganography to hide encrypted messages within ordinary images. This technique works by replacing the least significant bits of pixel values in an image with bits from the message. Since modifying the least significant bit causes only minor changes to the pixel color, these modifications are imperceptible to the human eye.
+QuantCrypt employs LSB steganography to hide encrypted messages within ordinary images. This technique works by replacing the least significant bits of pixel values in an image with bits from the message. Since modifying the least significant bit causes only minor changes to the pixel color, these modifications are imperceptible to the human eye.
 
 ### Implementation Details
 
@@ -318,7 +318,7 @@ def hide_encrypted_message(self, image_path, message, recipient_name, output_pat
 
 ## Application Architecture
 
-The Kyber application is built with a modular architecture consisting of several main components:
+The QuantCrypt application is built with a modular architecture consisting of several main components:
 
 ### Core Components
 
@@ -375,6 +375,6 @@ The application uses CustomTkinter to provide a modern, user-friendly interface 
 
 ## Conclusion
 
-Kyber combines post-quantum cryptography with steganography to provide a secure communication method resistant to both current and future threats. By leveraging the NIST-selected MLKEM-1024 algorithm, the Krypton cipher, and LSB steganography, it offers robust protection for sensitive communications.
+QuantCrypt combines post-quantum cryptography with steganography to provide a secure communication method resistant to both current and future threats. By leveraging the NIST-selected MLKEM-1024 algorithm, the Krypton cipher, and LSB steganography, it offers robust protection for sensitive communications.
 
 This application demonstrates how post-quantum cryptographic primitives can be integrated into practical applications, providing a bridge to the post-quantum future of secure communications. 
